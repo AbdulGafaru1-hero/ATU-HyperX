@@ -50,13 +50,13 @@
     margin-bottom: 10px;
 }
 
-.firstname, .lastname, .email, .staffID, .phoneNumber{
+.firstname, .lastname, .reg-email, .staffID, .phoneNumber{
     display: flex;
     flex-direction: column;
     margin-bottom: 12px;
 }
 
-.firstname >input, .lastname >input, .email > input, .staffID > input, .phoneNumber > input {
+.firstname >input, .lastname >input, .reg-email > input, .staffID > input, .phoneNumber > input {
     width: 450px;
     padding: 10px;
     background: #f8f8f8;

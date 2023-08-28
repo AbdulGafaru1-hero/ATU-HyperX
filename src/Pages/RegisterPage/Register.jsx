@@ -16,7 +16,7 @@ function Register() {
   
   <div className="registerForm">
     <h3>Registration Details</h3>
-    <div className="form">
+    <div className="reg-form">
     <div className="firstname">
       <label htmlFor="firstname">Firstname</label>
       <input type="text"/>
@@ -25,7 +25,7 @@ function Register() {
       <label htmlFor="lastname">Lastname</label>
       <input type="text"/>
   </div>
-    <div className="email">
+    <div className="reg-email">
       <label htmlFor="email">Email</label>
       <input type="email"/>
   </div>
