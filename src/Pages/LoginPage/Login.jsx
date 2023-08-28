@@ -24,7 +24,7 @@ function Login() {
       <label htmlFor="checkbox">Remember me</label> 
       <p>Forgot Password</p>
 </div>
-      <button type="submit"> Log In</button>
+      <button type="button"> Log In</button>
   </form>
     </div>
     </>

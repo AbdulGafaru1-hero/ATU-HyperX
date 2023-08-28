@@ -21,7 +21,7 @@ function ResetPassword() {
   <input type="password" placeholder='confirm new password'/>
   </div>
 </div>
-<button type='button'>Continue</button>
+<button type='button' className='continueButton'>Continue</button>
     </div>
   )
 }
