@@ -95,7 +95,7 @@
 
 }
 @media only screen and (max-width: 1024px){
-    .firstname >input, .lastname >input, .email > input, .staffID > input, .phoneNumber > input{
+    .firstname >input, .lastname >input, .reg-email > input, .staffID > input, .phoneNumber > input{
         width: 300px;;
     }
     .checkboxes{
@@ -116,7 +116,7 @@
 .register{
     padding: 20px;
 }
-.firstname >input, .lastname >input, .email > input, .staffID > input, .phoneNumber > input{
+.firstname >input, .lastname >input, .reg-email > input, .staffID > input, .phoneNumber > input{
     width: 300px;;
 }
 .noteCard p{
