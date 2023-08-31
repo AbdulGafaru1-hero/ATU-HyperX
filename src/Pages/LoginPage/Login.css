@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     border: 1.5px solid #03478D;
-    padding: 50px;
+    padding: 50px 20px;
     width: 370px;
     flex-direction: column;
    margin: 60px auto;
@@ -25,15 +25,25 @@
     padding: 10px;
     padding-left: 20px;
     background: #f8f8f8;
-    border: none;
+    border: 1.5px solid #03478D;
     border-radius: 5px;
     outline: none;
     margin-top: 5px;
 }
+.email > label, .password > label{
+   margin-bottom: -2px;
+}
 .email{
     margin-bottom: 20px;
+   
 }
-.form button{
+.rememberMe{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+.loginBtn{
     width: 100%;
     background-color: #03478D;
     color: white;
@@ -49,15 +59,16 @@
 .forget{
     display: flex;
    margin-top: 10px;
-   gap: 10px;
+   gap: 30px;
+   align-items: center;
+ 
 }
-
-
 .forget p{
 margin-left: auto;
-margin-right: -20px;
 color:#686868;
 cursor: pointer;
+font-size: 12px;
+margin-top: -15px;
 }
 
 .forget p:hover{
@@ -67,12 +78,15 @@ cursor: pointer;
 @media only screen and (max-width: 425px){
     .login{
         width: 280px;
+        align-items: center;
     }
-}
+  
+} 
 @media only screen and (max-width: 375px) {
     .login{
         width: 220px;
     }
+  
     .forget label, p{
         font-size: 12px;
     }

@@ -20,11 +20,11 @@ function Login() {
 </div>
 
 <div className="forget">
-      <input type="checkbox" />
-      <label htmlFor="checkbox">Remember me</label> 
+     
+      <label className='rememberMe'  htmlFor="checkbox"> <input type="checkbox" />Remember me</label> 
       <p>Forgot Password</p>
 </div>
-      <button type="button"> Log In</button>
+      <button className="loginBtn" type="button"> Log In</button>
   </form>
     </div>
     </>

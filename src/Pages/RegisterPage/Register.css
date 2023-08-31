@@ -60,10 +60,14 @@
     width: 450px;
     padding: 10px;
     background: #f8f8f8;
-    border: none;
+    border: 1.5px solid #03478D;
     border-radius: 5px;
     outline: none;
     margin-top: 5px;
+}
+.firstname >label, .lastname >label, .reg-email > label, .staffID > label, .phoneNumber > label 
+.checkboxes{
+   margin-bottom: -2px;
 }
 
 .checkboxes{
@@ -71,15 +75,17 @@
     gap: 20px;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .OPD, .physician, .pharmacy, .lab, .others{
-    align-items: center;
-    margin: 10px 0;
+    display: flex;
+ 
 }
 
 .OPD > input, .physician > input, .pharmacy > input, .lab > input, .others > input{
     margin-right: 3px;
+    margin-top: -15px;
 }
 
  button{

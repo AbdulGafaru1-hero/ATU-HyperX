@@ -4,7 +4,7 @@ import "../DefaultPassword/DefaultPassword.css"
 function ResetPassword() {
   return (
     <div className="resetPassword">
-<h3>Hi user! welcome to ATU hyperX</h3>
+<h3 className='welcomeTitle'>Hi user! welcome to ATU hyperX</h3>
 <p>Change your default password </p>
 
 <div className="passwordInputs">

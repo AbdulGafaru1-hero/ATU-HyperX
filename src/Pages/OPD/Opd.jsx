@@ -10,21 +10,21 @@ function Opd() {
     <h3>Add visit records for patient</h3>
 <div className="patientRecords">
 <label name="patientID">Patient ID
-<input type="text" className="patientId"/></label>
+<input className="input patientId" type="text"/></label>
 
 <div className="temp">
     <label name="date">Date/Time
-    <input type="datetime-local" /></label>
+    <input className="input" type="datetime-local" /></label>
 
     <label name="temperature">Temperature
-    <input type="text" /> </label>
+    <input className="input" type="text" /> </label>
 </div>
 <div className="weight">
     <label name="weight">Weight
-    <input type="text" /></label>
+    <input className="input" type="text" /></label>
 
     <label name="weight">Blood Pressure
-    <input type="text" /></label>
+    <input className="input" type="text" /></label>
 </div>
 <button className="addPatient">Add Patient</button>
 </div>

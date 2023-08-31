@@ -42,23 +42,23 @@ function Register() {
   <h3>Account Type</h3>
   <div className="checkboxes">
   <div className="OPD">
-      <input type="checkbox" value="1"/>
+      <input type="checkbox" />
       <label name="OPD">OPD</label>
   </div>
   <div className="physician">
-      <input type="checkbox" value="1"/>
+      <input type="checkbox" />
       <label name="physician">Physician</label>
   </div>
   <div className="pharmacy">
-      <input type="checkbox"value="1"/>
+      <input type="checkbox"/>
       <label name="pharmacy">Pharmacy</label>
   </div>
   <div className="lab">
-      <input type="checkbox" value="1"/>
+      <input type="checkbox" />
       <label name="lab">Lab</label>
   </div>
   <div className="others">
-      <input type="checkbox" value="1"/>
+      <input type="checkbox" />
       <label name="others">Others</label>
   </div>
   </div>
