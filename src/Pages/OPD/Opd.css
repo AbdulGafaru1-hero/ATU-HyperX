@@ -1,0 +1,102 @@
+.opd{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+    margin-top: 30px;
+}
+
+.opdBtn{
+    /* width: 300px; */
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+   
+}
+.recBtn, .createBtn{
+    background-color: white;
+    color: #03478D;
+    border: 2px solid #03478D;
+    border-radius: 0;
+    width: 200px;
+    padding: 15px;
+}
+.recBtn:hover, .createBtn:hover {
+    background-color: #03478D;
+    color: white;
+}
+
+h3{
+    font-size: 30px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.patientRecords{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    border: 1.5px solid #03478D;
+    margin: 20px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+label{
+    flex-direction: column;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.temp{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.weight{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+input{
+    padding: 10px;
+    border: 1.5px solid #03478D;
+    border-radius: 5px;
+    outline: none;
+}
+.addPatient{
+    width: 100%;
+}
+
+@media only screen and (max-width: 425px){
+    .opdBtn{
+        flex-direction: column;
+        gap: 10px;
+    }
+    h3{
+        font-size: 24px;
+        margin-bottom:30px;
+    }
+    input{
+        width: 280px;
+    }
+    /* .patientId{
+        width: 300px;
+    } */
+    .temp, .weight{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .patientRecords{
+        padding: 20px;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width:375px){
+input{
+width: 250px;
+}
+}

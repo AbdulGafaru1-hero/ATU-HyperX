@@ -18,23 +18,23 @@ function Register() {
     <h3>Registration Details</h3>
     <div className="reg-form">
     <div className="firstname">
-      <label htmlFor="firstname">Firstname</label>
+      <label name="firstname">Firstname</label>
       <input type="text"/>
   </div>
     <div className="lastname">
-      <label htmlFor="lastname">Lastname</label>
+      <label name="lastname">Lastname</label>
       <input type="text"/>
   </div>
     <div className="reg-email">
-      <label htmlFor="email">Email</label>
+      <label name="email">Email</label>
       <input type="email"/>
   </div>
     <div className="phoneNumber">
-      <label htmlFor="phoneNumber">Phone Number</label>
+      <label name="phoneNumber">Phone Number</label>
       <input type="text"/>
   </div>
     <div className="staffID">
-      <label htmlFor="staffID">Staff ID</label>
+      <label name="staffID">Staff ID</label>
       <input type="text"/>
   </div>
   </div>
@@ -42,24 +42,24 @@ function Register() {
   <h3>Account Type</h3>
   <div className="checkboxes">
   <div className="OPD">
-      <input type="checkbox"/>
-      <label htmlFor="OPD">OPD</label>
+      <input type="checkbox" value="1"/>
+      <label name="OPD">OPD</label>
   </div>
   <div className="physician">
-      <input type="checkbox"/>
-      <label htmlFor="physician">Physician</label>
+      <input type="checkbox" value="1"/>
+      <label name="physician">Physician</label>
   </div>
   <div className="pharmacy">
-      <input type="checkbox"/>
-      <label htmlFor="pharmacy">Pharmacy</label>
+      <input type="checkbox"value="1"/>
+      <label name="pharmacy">Pharmacy</label>
   </div>
   <div className="lab">
-      <input type="checkbox"/>
-      <label htmlFor="lab">Lab</label>
+      <input type="checkbox" value="1"/>
+      <label name="lab">Lab</label>
   </div>
   <div className="others">
-      <input type="checkbox"/>
-      <label htmlFor="others">Others</label>
+      <input type="checkbox" value="1"/>
+      <label name="others">Others</label>
   </div>
   </div>
 </div>
