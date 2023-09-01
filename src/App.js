@@ -8,6 +8,7 @@ import Logo from "../src/assets/logo.png";
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Opd from './Pages/OPD/Opd';
 import ClinicID from './Pages/Clinic-ID/ClinicID';
+import OpdRecords from './Pages/OPDRecords/OpdRecords';
 
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
       <Route path='/defaultpassword'  element={  <DefaultPassword />} />
       <Route path='/opd'  element={  <Opd />} />
       <Route path='/clinic-id'  element={  <ClinicID />} />
+      <Route path='/opd-records'  element={  <OpdRecords/>} />
       </Routes>
       </div>
       </Router>

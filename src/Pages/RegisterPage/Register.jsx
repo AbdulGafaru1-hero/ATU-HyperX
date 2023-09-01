@@ -1,7 +1,14 @@
-import React from 'react';
+import { useState } from 'react';
 import "../RegisterPage/Register.css"
 
 function Register() {
+
+  const [selectedAccountType, setSelectedAccountType] = useState('');
+
+  const handleAccountTypeChange = (event) => {
+    setSelectedAccountType(event.target.value);
+  };
+
   return (
     <div className="register">
   <div className="registerNote">
@@ -38,31 +45,66 @@ function Register() {
       <input type="text"/>
   </div>
   </div>
-<div className="accountType">
-  <h3>Account Type</h3>
-  <div className="checkboxes">
-  <div className="OPD">
-      <input type="checkbox" />
-      <label name="OPD">OPD</label>
-  </div>
-  <div className="physician">
-      <input type="checkbox" />
-      <label name="physician">Physician</label>
-  </div>
-  <div className="pharmacy">
-      <input type="checkbox"/>
-      <label name="pharmacy">Pharmacy</label>
-  </div>
-  <div className="lab">
-      <input type="checkbox" />
-      <label name="lab">Lab</label>
-  </div>
-  <div className="others">
-      <input type="checkbox" />
-      <label name="others">Others</label>
-  </div>
-  </div>
-</div>
+ <div className="accountType">
+          <h3>Account Type</h3>
+          <div className="checkboxes">
+            <div className="OPD">
+              <input
+                type="checkbox"
+                id="opd"
+                name="accountType"
+                value="opd"
+                checked={selectedAccountType === "opd"}
+                onChange={handleAccountTypeChange}
+              />
+              <label htmlFor="opd">OPD</label>
+            </div>
+            <div className="physician">
+              <input
+                type="checkbox"
+                id="physician"
+                name="accountType"
+                value="physician"
+                checked={selectedAccountType === "physician"}
+                onChange={handleAccountTypeChange}
+              />
+              <label htmlFor="physician">Physician</label>
+            </div>
+            <div className="pharmacy">
+              <input
+                type="checkbox"
+                id="pharmacy"
+                name="accountType"
+                value="pharmacy"
+                checked={selectedAccountType === "pharmacy"}
+                onChange={handleAccountTypeChange}
+              />
+              <label htmlFor="pharmacy">Pharmacy</label>
+            </div>
+            <div className="lab">
+              <input
+                type="checkbox"
+                id="lab"
+                name="accountType"
+                value="lab"
+                checked={selectedAccountType === "lab"}
+                onChange={handleAccountTypeChange}
+              />
+              <label htmlFor="lab">Lab</label>
+            </div>
+            <div className="others">
+              <input
+                type="checkbox"
+                id="others"
+                name="accountType"
+                value="others"
+                checked={selectedAccountType === "others"}
+                onChange={handleAccountTypeChange}
+              />
+              <label htmlFor="others">Others</label>
+            </div>
+          </div>
+        </div>
 <button type='button'>Create Account</button>
   </div>
     </div>
