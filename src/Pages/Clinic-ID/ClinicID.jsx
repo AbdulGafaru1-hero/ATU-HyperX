@@ -1,5 +1,8 @@
-import "../Clinic-ID/ClinicID.css"
+import "../Clinic-ID/ClinicID.css";
 import { useState } from "react";
+import StudentId from "../../components/StudentID/studentId";
+import StaffId from "../../components/StaffID/staffId";
+
 
 function ClinicID() {
 
@@ -14,8 +17,15 @@ function ClinicID() {
       setSelectedPatientType(value);
     };
   
+const [modal, setModal] = useState(false);
+
+
+const toggleModal = () => {
+  setModal(!modal)
+}
 
   return (
+
     <div className='clinicId'>
 <h3 className="IdTitle">Create new Clinic ID</h3>
 <div className="IdForm">
@@ -27,7 +37,7 @@ function ClinicID() {
 
     <div className="gender">
           <p>Gender:</p>
-          <label name="male">
+          <label name="male" >
             <input
               type="checkbox"
               name="gender"
@@ -52,7 +62,8 @@ function ClinicID() {
         
         <div className="patientType">
           <p>Patient Type:</p>
-          <label name="student">
+         
+          { modal ?  <StudentId toggleModal={toggleModal}/> : <label name="student" onClick={toggleModal}>
             <input
               type="checkbox"
               name="patientType"
@@ -61,9 +72,10 @@ function ClinicID() {
               onChange={() => handlePatientTypeChange("student")}
             />
             Student
-          </label>
+          </label>}
 
-          <label name="staff">
+   {modal ?  <StaffId toggleModal={toggleModal}/> :
+          <label name="staff" onClick={toggleModal}>
             <input
               type="checkbox"
               name="patientType"
@@ -72,7 +84,8 @@ function ClinicID() {
               onChange={() => handlePatientTypeChange("staff")}
             />
             Staff
-          </label>
+          </label>}
+         
         </div>
 <label className="staff" name="staffId">Student / Staff ID
     <input type="text" /></label>
