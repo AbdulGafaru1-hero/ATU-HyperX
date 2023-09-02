@@ -4,7 +4,9 @@
     padding: 40px 140px;
     gap: 80px;
     }
-   
+    /* .left{
+        padding-top: 50px;
+    } */
     .left h4{
         font-size: 40px;
         color: rgb(28, 28, 28);
@@ -102,8 +104,7 @@
     .right img{
       border-radius: 0;
       width: 420px;
-      height: 100vh;
-      object-fit: cover;
+      height: 470px;
     }
     }
     
