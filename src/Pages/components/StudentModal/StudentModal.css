@@ -1,0 +1,21 @@
+.studentModal{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 40px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px rgba(0,0,0, 0.5);
+}
+.studentModal input{
+    padding: 8px;
+    border-radius:5px;
+    outline: none;
+    border: 1.5px solid #03478D;
+}
+.modalBtn{
+    width:max-content;
+    padding: 8px 20px;
+}

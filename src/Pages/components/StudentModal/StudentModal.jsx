@@ -1,13 +1,13 @@
-import "../StudentID/studentId.css"
+import "./StudentModal.css"
 
 function studentId( { toggleModal}) {
   return (
-    <div className='studentId'>
+    <div className='studentModal modalOverlay'>
 <label className="findexNumber" name="indexNumber">Index Number
     <input type="text" /></label>
-<label className="department" name="department">Index Number
+<label className="department" name="department">Department
     <input type="text" /></label>
-    <button type="button" className="submit" onClick={toggleModal}>Continue</button>s
+    <button type="button" className="modalBtn" onClick={toggleModal}>Continue</button>
     </div>
   )
 }

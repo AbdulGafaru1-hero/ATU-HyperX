@@ -1,7 +1,7 @@
 import "../Clinic-ID/ClinicID.css";
 import { useState } from "react";
-import StudentId from "../../components/StudentID/studentId";
-import StaffId from "../../components/StaffID/staffId";
+import StudentModal from "../components/StudentModal/StudentModal";
+import StaffModal from "../components/StaffModal/StaffModal";
 
 
 function ClinicID() {
@@ -17,11 +17,15 @@ function ClinicID() {
       setSelectedPatientType(value);
     };
   
-const [modal, setModal] = useState(false);
+const [studentModal, setStudentModal] = useState(false);
+const [staffModal, setStaffModal] = useState(false);
 
 
 const toggleModal = () => {
-  setModal(!modal)
+  setStudentModal(!studentModal)
+}
+const toggleStaffModal = () => {
+  setStaffModal(!staffModal)
 }
 
   return (
@@ -63,7 +67,7 @@ const toggleModal = () => {
         <div className="patientType">
           <p>Patient Type:</p>
          
-          { modal ?  <StudentId toggleModal={toggleModal}/> : <label name="student" onClick={toggleModal}>
+          { studentModal ?  <StudentModal toggleModal={toggleModal}/>  : <label name="student" onClick={toggleModal}>
             <input
               type="checkbox"
               name="patientType"
@@ -73,9 +77,9 @@ const toggleModal = () => {
             />
             Student
           </label>}
-
-   {modal ?  <StaffId toggleModal={toggleModal}/> :
-          <label name="staff" onClick={toggleModal}>
+         
+   {staffModal ?   <StaffModal toggleStaffModal={toggleStaffModal}/> :
+          <label name="staff" onClick={toggleStaffModal}>
             <input
               type="checkbox"
               name="patientType"
