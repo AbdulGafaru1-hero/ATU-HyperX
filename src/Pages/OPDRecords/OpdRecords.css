@@ -104,11 +104,26 @@
 
   @media only screen and (max-width: 425px){
     .table-container {
-      max-width: 100px;
-      margin-left: -40px;
+        width: 100%;
       }
     
       .searchSection {
         flex-direction: column;
       }
+      .stripped-table th{
+        font-size: 10px;
+        padding: 5px;
+        width: 2px;
+        text-align: center;
+      }
+      .stripped-table td{
+        font-size: 10px;
+      }
+  }
+
+  @media only screen and (max-width: 375px){
+.table-container{
+  max-width: 100%;
+  overflow: hidden;
+}
   }
