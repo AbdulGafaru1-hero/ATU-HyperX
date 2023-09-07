@@ -1,18 +1,30 @@
+import { useState}  from "react"
 import "../Physician/Physician.css";
+import PatientCard from "../components/PatientCard/PatientCard";
+import { FaBars} from 'react-icons/fa';
+
 
 
 function Physician() {
+const [openSidebar, setOpenSideBar] = useState (false);
+
+
+const toggleSidebar = () => {
+    setOpenSideBar(!openSidebar)
+}
+
   return (
     <div className="physicianPage">
     <div className="physicianSidebar">
 <h3>Active Patients</h3>
-
-<div className="activePatient">
-    <h3>Patient ID</h3>
-    <p>01234567D</p>
-</div>
-
+<FaBars onClick={toggleSidebar}/>
+    <div className="activePatient">
+    <PatientCard />
+    <PatientCard />
+    <PatientCard />
+    <PatientCard />
     </div>
+        </div>
         <div className="physicianFeed">
             <h3 className="feedTitle">Patient Health Record (Current)</h3>
         <div className="currentRecords">

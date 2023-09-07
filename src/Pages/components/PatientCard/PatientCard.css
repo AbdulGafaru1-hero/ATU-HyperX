@@ -1,0 +1,23 @@
+.patientCard{
+    background: white;
+    color: black;
+    border-radius: 10px;
+    padding:0 20px;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+
+.patientCard:hover{
+    color: white !important;
+    background-color: #032343;
+}
+.patientCard > h3{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--blue);
+}
+
+.patientCard > p{
+    font-weight: 500;
+    padding-bottom: 10px;
+}
