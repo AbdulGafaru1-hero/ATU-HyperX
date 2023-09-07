@@ -1,0 +1,120 @@
+.physicianPage{
+    display: flex;
+    gap: 50px;
+    height: 100%;
+}
+
+.physicianSidebar{
+    flex: 1;
+    background-color: var(--blue);
+    color: white;
+    max-height: 100vh;
+    padding: 20px;
+    padding-left: 20px;
+}
+.physicianSidebar > h3{
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.activePatient{
+    background: #85c1fd;
+    color: black;
+    border-radius: 10px;
+    padding:0 20px;
+    cursor: pointer;
+}
+
+.activePatient:hover{
+    color: white !important;
+    background-color: #032343;
+}
+.activePatient > h3{
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--blue);
+}
+
+.activePatient > p{
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.physicianFeed{
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.feedTitle{
+    text-align: center;
+  margin-bottom: 20px;
+}
+
+.currentRecords{
+    display: flex;
+    justify-content: space-around;
+
+}
+.currentRecords > label{
+    color: rgb(28, 28, 28);
+    padding-bottom: 10px;
+    margin-left: 10px;
+}
+.inputPhy{
+    padding: 10px;
+    border: 1.5px solid #03478D;
+    border-radius: 5px;
+    outline: none;
+}
+
+.physicianTextarea{
+    display: flex;
+    flex-direction: column;
+}
+
+.textareaTop{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    gap: 30px;
+    padding: 20px;
+}
+
+.symptoms, .diagnosis {
+    width: 400px;
+   height: 250px;
+margin-top: 5px;
+outline: var(--blue);
+padding: 5px;
+}
+
+
+.prescriptions{
+    padding: 20px;           
+}
+
+.prescription{
+  margin-top: 5px;
+  padding: 5px;
+}
+.symptoms:focus, .diagnosis:focus, .prescription:focus{
+    border: 1.5px solid #03478D;
+    border-radius: 5px;
+}
+.prescription{
+    outline: var(--blue);
+}
+.actions{
+  margin-bottom: 60px;
+}
+.actions > h3{
+    font-size: 24px;
+    margin-left: 20px;
+}
+.actionButton{
+    padding: 20px;
+    cursor: pointer;
+    width: 95%;
+}

@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Opd from './Pages/OPD/Opd';
 import ClinicID from './Pages/Clinic-ID/ClinicID';
 import OpdRecords from './Pages/OPDRecords/OpdRecords';
+import Physician from './Pages/Physician/Physician';
 
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
       <Route path='/opd'  element={  <Opd />} />
       <Route path='/clinic-id'  element={  <ClinicID />} />
       <Route path='/opd-records'  element={  <OpdRecords/>} />
+      <Route path='/physician'  element={  <Physician/>} />
       </Routes>
       </div>
       </Router>

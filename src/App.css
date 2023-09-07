@@ -1,3 +1,10 @@
+:root {
+  --blue: #03478D;
+  --yellow: #E5AE1F;
+  
+}
+
+
 
 .nav{
   display: flex;
