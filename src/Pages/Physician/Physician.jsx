@@ -14,10 +14,13 @@ const toggleSidebar = () => {
 }
 
   return (
+    
     <div className="physicianPage">
-    <div className="physicianSidebar">
-<h3>Active Patients</h3>
-<FaBars onClick={toggleSidebar}/>
+          <FaBars className={`sidebarToggle${openSidebar ? " open" : ""}`} onClick={toggleSidebar} />
+          
+          <div className={`physicianSidebar${openSidebar ? " open" : ""}`}>
+            <h3>Active Patients</h3>
+
     <div className="activePatient">
     <PatientCard />
     <PatientCard />

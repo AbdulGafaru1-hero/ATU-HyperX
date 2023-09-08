@@ -6,11 +6,44 @@
 
 .physicianSidebar{
     flex: 1;
+    position: absolute;
+    top: 150px;
+    left: -300px; /* Initially hidden */
+    width: 300px;
+    height: 100%;
     background-color: var(--blue);
     color: white;
     padding: 20px 40px;
     padding-left: 20px;
+    transition: left 0.3s ease-in-out;
+    z-index: 1;
 }
+/* .physicianSidebar{
+    flex: 1;
+    background-color: var(--blue);
+    color: white;
+    padding: 20px 40px;
+    padding-left: 20px;
+    display: block;
+} */
+.physicianSidebar.open {
+    left: 0;
+  }
+  .sidebarToggle {
+    position: absolute;
+  top: 70px; 
+  right: 20px; 
+  cursor: pointer;
+  /* Add your icon styles here */
+  transition: transform 0.3s ease-in-out;
+  color: white;
+  z-index: 2;
+}
+.sidebarToggle.open {
+    transform: rotate(180deg);
+  
+  }
+
 .physicianSidebar > h3{
     text-transform: uppercase;
     font-size: 24px;
@@ -127,9 +160,20 @@ padding: 5px;
 }
 
 @media only screen and (max-width: 425px){
+    
 .physicianSidebar{
     display: none;
+    position: relative;
 }
+.physicianSidebar.open {
+    display: block;
+    position: absolute;
+  }
+  .sidebarToggle {
+    position: absolute;
+    display: block; 
+    font-size: 40px;
+  }
  .prescription, .symptoms, .diagnosis{
     width: 350px;
  }
@@ -151,4 +195,7 @@ padding: 5px;
     .prescription, .symptoms, .diagnosis{
         width: 300px;
      }
+     /* .sidebarToggle{
+        z-index: 999px;
+     } */
 }
